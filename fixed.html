@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Fixed Content</title>
+  <style>
+    body {
+  margin: 0;
+  padding: 0;
+}
+
+.fixed-content {
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  background-color: #f0f0f0;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-content {
+  margin-top: 100px; /* Adjust this margin to prevent content overlap */
+  padding: 20px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="fixed-content">
+    <!-- Your content goes here -->
+    <h1>This is fixed content</h1>
+    <p>Some text here...</p>
+  </div>
+
+  <div class="main-content">
+    <br><br>
+    <form method="get" action="http://www.google.com/search">
+        <label><input name="q" type="search" size="30"/> </label></br>
+        <label><input type="submit" value="search"/> </label>
+    </form>
+    <!-- The rest of your page content goes here -->
+    <pre>Scroll down to see the main content...
+        Clarity logo
+The Three P’s of a Design System
+Video
+Dec 11, 2018
+2:30 pm
+ET
+SVA Theatre
+Adekunle Oduye
+Adekunle Oduye
+Senior Front-end Engineer
+MailChimp
+
+Is there a way we can build a design system that give engineers production ready UI components but also assist designers in crafting front-end prototypes? Learn about the three Ps and how it can help achieve these goals.
+
+‍
+Sketch Notes
+The Three P’s of a Design System
+
+Artist: Natalya Shelburne
+Transcript
+
+Nathan Curtis:
+
+    He is a coorganizer of a New York-based meet-up and especially excited because he is another person that’s going talk about the relationship of design and tech together. So please welcome Adekunle Oduye.
+
+applause
+
+Adekunle Oduye:
+
+    Thank you, thank you. First thing I want to say is that I’m super glad to be here, especially in New York. I’m born and raised in New York so shout out to Jina for organizing this and also letting me speak. So lets get into it. So a little about myself, the first question you might have is how do you say my name I’ll make it easy for everyone. So my name is Adekunle Oduye. You can find me on the Internet, just my first name, last name, whatever. I am a design technologist at memorial Sloan Kettering. It’s a cancer hospital in New York City and I’m basically building design systems and also prototypes for the data so I’m going to start with a disclaimer. My initial talk idea was going to be about how can a design system save lives. Now I was going to talk about how I’m crafting this world class design system that race helping doctors to save lives. But there’s two things that wouldn’t be helpful for you all I’m going to be talking about myself and patting myself on the back which would not be helpful but also I’ve only been there for seven months so I’m not that good. I wish, but I’m not. So could it save lives?  Not really. But I feel like anything is possible. So not yet.
+
+    So the three P’s. This came from a reality show I used to watch, or I still watch but I tell people I don’t watch it. Came from the Profit and the summary about the show is the host goes around seeing businesses and uses the form of three P’s to take them from not making any profit to making them into where they are actually profitable. And I was kind of saying hmm, this could be great for a design system talk. So here I am. The first P is the people. The people are the foundation of whatever we do. We get paid the big bucks to kind of solve problems but also craft products that are useful. And if you take a deeper dive into the people, there’s two groups. We have producers and we have consumers. Basically producers provide the product and consumers consume the product. If you take it deeper into who are the producers, in context of like the actual design system we have a design system which serves the direct users and then the direct users serve the end users. And in particular who are the direct users. This is a subgroup of who uses design systems overall so we have design, we have engineer, it might have a data science team, we have QA, marketing and many, many more. But I was kind of thinking that how can we do in a way, we can’t really solve problems for everybody, I had this notion where we design for the primary, we support the secondary, and you accommodate the rest. Because my idea was that you can’t really, especially you don’t have a dedicated team it’s kind of hard to solve everyone’s problem. The best way to do that is put them into subgroups. And this is an example that I got from Nathan Curtis’ article around how to categorize them. We have the primary which is usually the engineers and designers. You have the secondary which is QA, data science, marketing, and you have others which is kind of like custom success, sales and finance. Your list might be different from mine, but the whole idea is you want to put them in groups. And essentially you want to do, the primary users are the ones that are consuming the design system on a daily basis. The secondary users are more using it as a reference, so not really using the actual components and what not, but they’re doing it in a way where they’re referencing design. Others don’t use lies it at all. They know there’s a design system out there, but day to day they could care less about it.
+
+    So I talked about like two primaries. We have the engineers and we have the designers. But which experience is most important?  Designers or engineers?  Before I used to say design experience is kind of the most important because obviously it’s called a design system so. But showily but surely I started to think like I think the developer experience is much more important because developers actually like working within constraints, whereas designers sometimes don’t. And the reason why I think this, because front end engineers or developers execute the actual UI, they execute the interaction design of it and they’re in charge of performance and accessibility. So if you really think about it like if you’re a designer, you’re more along the lines of planning the actual experience whereas the engineers are crafting the experience itself. And I have this kind of idea where the design system doesn’t really exist until it’s in code because we could create the most beautiful sketch library for those that are kind of old school like me, fireworks or anything like that, but the end of the day if you can’t really take that and put it into actual product, then it doesn’t really exist. And of the best way to learn what how and what to actually build, you want to do some sort of research. There’s two ways to kind of do it. You have the quantitative research, because there’s a million ways to actually craft a design system. Especially if you think about hey I want to craft a more developer-like experience for my design system there might be a way what framework should I use, what should I focus on, the great way to do that is with quantitative research. This is an example of a survey I did a couple of years back, and I was working in a larger corporation and the thing we wanted to do was figure out to what actually focus on. We want to focus on what we should kind of build right now. So we send out a couple of surveys to engineer managers to kind of get a sense of it and sent some good replies and some stuff there was not shocking but there was some stuff that was shocking. Another method we could kind of do is qualitative research. This is the one I kind of enjoyed better because what happens is you do it in a way where you actually are talking to the people individually and kind of figuring out what their needs are, and I like to do this in one to one rather than group because you don’t want people’s opinions to be able to influence each other.
+
+    Some of the questions I ask is what are the major pain points of the design process?  And I think it’s super important that the design system is kind of solving problems where within the design process, especially for the engineer experience. Because you’re not — you might not always have a designer to kind of help with the actual UI. You want them to be kind of like kind of have sort of tools that allow them to craft the UI.
+
+    Another thing is how can you make your job easier for that. So I kind of tailored this to more of the people that are on the secondary category. So for a QA and people that are using it more as a reference, I think it’s important that if you want to be able to have a design system that’s going last and it’s going to be productive and it’s going to bring value to the team, to really kind of support the secondary user group. And then also one question I would like to ask where are your future goals. Because I think what happens is you always design for the now, but I think there’s cool stuff especially for the design systems where people are doing stuff with AI and voice and you want to be in a way where you’re kind of thinking about what are the stuff that you can work in the future.
+
+    So some of the stuff I’ve learned from doing this research is that people really like documentation, but people don’t like writing it. I dent like writing it. I think most of y’all don’t like writing it. But the whole idea is that you might have the best design system in the world, but if you don’t have a documentation that tells you how to use it, then it’s simply a failure, basically. Yeah. The next thing is that it has to have a seamless integration to any application. So we often talk about how that we react in Vue and all these frameworks. In most cases if the application doesn’t really want to use any of the stuff, can they just put it in with just css or maybe sass. Have you to make it in a way where it is frictionless for the end user. The next thing is that communicate, you want to be able to communicate the design system updates. So basically this happened to me, and I’ve been the person that has been the culprit where I update the component and I just started using it and don’t tell anyone and this is something I built like a month ago or two months ago and people are unaware of it. So you really want to communicate this. And there’s multiple ways you can communicate this. There’s slack bot plug-ins, there’s also old-fashioned where you can e-mail a weekly or biweekly newsletter about what are the updates but you want to do it in a way where you do it on a consistent basis. And this is a big thing. So actually work on a design system that had like 100 components. Mind you, not everything should be a component, but we did test it out, break an actual component itself. What ended up happening is people didn’t want to use it anymore because it wasn’t reliable, it wasn’t trustworthy and you want to do it in a way where you do all of that up front. You want to test and validate and making sure that it does what it’s supposed to do. So this is a great quote from the article of the people part of the design system. Basically she says we realized that ultimately for our systems to succeed long term, it needs to be thought of as everyone’s responsibility. And I think the only way you can kind of put it in a way where everyone’s responsibility if you truly understand what people need and what people want, but also give them the ability to make that change itself. So this is an actual quote I’m not going to name the person because they might get embarrassed. But like one of my coworkers said that I want to be at a point where front-end doesn’t have to write CSS to create new UI. If you really think about it, because a lot of front-end engineers I have found out that they don’t really like writing CSS, and they actually hate it, so that’s why the whole idea of CSS and JavaScript and what not. But you want to be, if you want to use the newer technologies, to make that as seamless as possible so they actually have to really take the time to actually learn it, they can just use it right away with as little friction as possible.
+
+    So let’s get into the second P and that is the process. So once you understand who the people are, and also understand what their needs an wants, you want to focus on the process. And the good thing about the process is you want to kind of make sure it does three things. You want to make sure it’s predictable. So if I want to get from point A to B, I know the specific steps to get there. You want to make sure it’s flexible. You don’t want to make sure where it is like super structure that it’s kind of brittle. You want to make sure if there’s a problem or something you want to improve, you can improve it on the fly and try it out. And also you want to make it frictionless. You want to be in a place where you take the actual component or whatever your design system and make it in a way where you use it but also it’s effortless, basically.
+
+    The first thing you start is with the component audit. You all know how to do a component audit but basically this is an example of it. And the most important thing about this is that from you find out the findings from the research campaign, in addition to doing a component audit, you figure out what you should be focusing on. That leads into the next thing which is a project road map. This is an example of a project, my current project road map for the design system I’m building. And the whole idea is you want to make sure where everything is clear and concise but also label them. So there’s a couple of labels that’s around like design, design needs, engineer needs, bugs. I did it this way because I’m the only one working on it right now, but in the future there might be a front engineer that might have some time. So they can go in here this is something we need to do, they could grab it and start working on it and also build it out. And the key with this is that you need a person to kind of keep this updated because if you don’t, people are just going to start building random things and you don’t want that.
+
+    So guidelines. I said guide lanes. I don’t like saying rules because I feel like in some cases things want to be flexible. So there’s some guidelines around how you do your commit message. So kind of what I do is I literally have brackets and then I do in a case where it is the actual thing that I’m working on, so it could be a badge, banner, core, whatever like that and just kind of a simple summary. And with this it makes it easy to kind of search, but also do in a way where if anyone has to — it’s readable, basically. And it’s similar to also doing issues. I found same kind of framework. Like I said it makes it easier for people to read, also searchable and what not. So let’s get into like the code side of things. So I kind of follow an order where a lot of my decorations and values within CSS is kind of, it’s alphabet. You can see it’s in order. I say this is a guideline because I don’t want people to think about how to do this. For me I’m just weird like that. But then you look at the actual values. So you can see right here that in most cases if I’m going to be referring to constantly, I create some sort of sass map or I use a variable to be able to put these in place so it makes it easy to reference them. The one thing I want to mention is the process is going to be rough especially at the beginning. Things are going to break, there’s a lot of technical debt. But the whole idea is you want to start in small little steps and I’ve kind of had this philosophy. This not only for design system but also for life. Where it is like small steps to great distances. So you want to start and get better each day and every day and what’s going to happen is you are going to be at a point where the process is going to be seamless and work as usual and what not.
+
+    So Lerna is actually a way where you can kind of manage JavaScript packages within one repo. And the great thing about it is you actually can be able to independently version your components, which makes it super useful. So this is kind of a diagram. Let’s say we have our design system repo. We have button, badge, dropdown, icon, banner. And essentially what’s going to happen is like if I make an update to the button component, I don’t actually have to push all the components up. I can just update the button component, push it to MPM and basically if anyone wants to use the newer styles, all they have to do is a yearn add to get the updates. And this is how it looks on the command line. Basically what’s happening is yarn run publish. This is actually is running two commands, a build but also a publish, Lerna publish. This is the current version and what do you want the new version to be. And I think with this I use the same versioning format where we have major, minor and patch. And the great thing about it is you can have basically a library of all the components. So basically there might be a case where you didn’t want to push actual component. The best thing to do is basically go in here. This is nexus and you could kind of delete it and basically update it but the whole idea is that everything is cataloged, there’s a history of it. And basically it makes it super easy to manage all this stuff. Let’s talk about the component structure. I talked about the idea that each of the actual components are individual packages. So every component has a similar structure. So if you look here, we have example where we have a design system, repo and we have the packages and we have the badge. So there’s a lot going on but I’m going explain a couple of them. So the .tsx is basically the type script version of JavaScript. Type script is just a super set of JavaScript if anyone is wondering. And then we have like the badge css all the styles for the actual component, the .mdx is where we put our documentation. If people want to know how to use it, everything is all in one place basically. So if you look at the actual component itself, you can see that this is like a very simple component. So we have the static display name, so basically just displays what the actual component name when you’re looking in the actual dev tools. And the one thing I want people to focus on is that what I’m doing is I’m basically using this kind of atomic slash syntax where I’m combining names to come up with variants. If you look at it again. This is kind of like the foundation of the component. So it kind of like this is the spacing, the padding or what not. And then for the variants, what you basically do is like literally think about it where you’re lake all right, I have a caution, I have an info and I have a mix basically telling you what the font color should be and also what the background color should be. And the good thing about this is you can actually build in theming. As you see on the top we have theme dark. If there’s any partner class that has theme dark, it’s going to use these styles. And if you want to see it like in real time, this is how it looks. Again, this is a way where you can keep the actual styles to the actual component which is pretty good. And if you look at the actual dev tool, this is like the react dev tool, you can see that usually you just have basically the component but also the process. And if you want to take a look at the HML version of it, you can see the variant of it. The good thing about that is it literally makes it easy for people to debug in the browser which is pretty good. And you get to a point where your design system is actually serving many different purposes. So we have the react version which is mostly tailored for the engineers so this is what they use in the production. But then we have the sass which is basically for the authors of the actual design system and then we have the compile CSS and that’s for people that don’t really want to use any of these tools but they want just like a dump of all the CSS and it’s all compile. So they can plug it into the application an start using them. So this is a great quote from Mark. He had an article called a mill little pieces functional CSS in react. The best CSS you write is the CSS you don’t write. And if you think about it, the less you write, the more scaleable it is, but also the actual pieces where you focus on like — sorry. The less CSS you write, the more scaleable your application and style is going to be. So let’s get into events stuff. So basically this is compound component and this is more for react but I’m thinking you can use it for any Java Script framework. The compound component is a React pattern where a collection of components share state. When I say state, you can think about it, it shares information between each and other. So one example of compound component is something with an hml where we have kind of like a select element and we have options. So basically the select knows which of these options are selected at the current state. You could do the same thing with compound components within React. So you have a dropdown, you have the dropdown item. And the good thing about it is this makes it where the component is flexible. There might be a case where you want to add like an icon or maybe want to do something different, this makes it easier. And before I was thinking about this, I was thinking about using rounder props, but this is also good for engineers. I actually asked the engineer like would this be the best way to do it and I think that’s the best way you want to do is making sure that you ask your user like how you want to use this actual component itself. So this is actually an example of it. You have a design like why design systems can feel. Despite how much control over engineers have on the press they need to feel like they have input and feel heard. I think it’s especially important if you want people to use it and you also want to achieve it even if they’re not building action component, you want to get their ideas making sure they’re heard but also they might be a good idea and also you want to be able to figure out how you can kind of put it into the actual process itself. So last. We are going to about the product. I feel like there’s like three products on focusing on like a design system that’s tailored to the engineer experience but there’s two that’s super important. I actually have this article called the workshop and storefront. The workshop is where you actually build the components itself and the storefront is where you display the actual components. So if you look at it, if you’re thinking about it more on like in the ropo level and how things are going to be structured, you have the packages and you have the docs folder. Go a little deeper. So this is actually an mdx file. And the great thing about this is it allows you to use React components within the documentation. So right now you see I’m just the actual component, kind of have a content around the actual what it is, the variants over here and have the props table. And what two I’m using is basically so if you take a look at this actually. Basically I have a command basically running where let’s say I just want to grab all the mdx files from each of the components and put them into the docs folder, you could write like a simple command script and that will allow you to do it. You also can use gulp or any other dev tool. But choose which one is going to work for you. What I use currently is docz. It’s super new. I think it’s like a couple of months old. The idea is it’s super easy to create a design system documentation site because everything is built in. If you look at the example I gave before, it comes built in with all this stuff where we have like a playground. You have access to the JSX but also the HTML itself and you have this table basically a props table. And the good thing about this you don’t have to update this at all. Once you update the actual component and build the actual documentation site, you get this all for free. And I feel like this basically leads to another thing where I am very passionate about, which is front-end prototyping. Like, there’s many wages to do it. You can do it — there’s many ways to do it. You can do it like a simple cheap way which is kind of with code pen. So people want to be able to prototype their ideas, they can use things like this template. But the one thing I want to communicate, at the end of the day we want to try to be able to design the actual experience, like the real experience, not just like some picture of the actual UI, but the actual interactions and what not. You want to be able to do it where you have one master deliverable. So rather than during a lot of mock-ups and out to your engineers, you kind of give them this one deliverable that has everything they need. And this is like a process that I was using when I was working on a design team where I was like 30 designers and we were all contributing to this one master repo. What ends up happening is they kind of fork off of the master and they do all their work and they put it back into the actual master itself. And the whole idea around this is you can make it in a way where your prototype, especially if you have user flows that kind of touch many different parts of the application, that they actually could kind of use the actual same styles and structure from like a different section of that prototype and use it at their work. I work with a lot of data, so front-end prototyping allows for easy use of real data so you want to be in a place where you can design around the actual data and not just use fake data itself. I really like the article around this, so if you want to learn more about this, check out the heart Internet. I’m going to Tweet this out later on. One thing I want to communicate is you want to move away from the whole idea of pixel perfection. I feel like if we have a great design system that has everything we need, our designers don’t need to make these mock-ups. We can create these wire frames and hand it off to the developers or maybe there could be some sort of collaboration. The whole idea is the designers aren’t pushing pixels. Maybe understanding the actual needs and wants of the user. I’m going to leave with three things. So we first want to understand the problems and goals of the people, which is important. But also create a process that empowers the people itself. Because you want to do it in a way where it is not frictionless — you want to do it in a way where it is frictionless but people know how to get from point A to point B. And then last we want to have a product that brings value, not only to the primary users but also the secondary and others. That’s pretty much it. Thank you.
+
+applause
+
+Nathan:
+
+    You said it’s up to the engineer to execute. You charge you put the responsibility on them and later you had a slide that talked about make it everybody’s responsibility. How do you create that transition to help everybody understand to feel like they’re responsible or even accountable for its success?
+
+Adekunle:
+
+    You want to have them in the room it’s like a group effort. Even if you’re crafting a design system you don’t want to be designers or engineers. You want to basically have it in a way where you have — to totally understand you kind of focus on the engineer or developer experience at the end of the day you only have consistent UI, but also it’s going to be less likely where you don’t want to keep on designing a button because I feel like that happens offer because you’re doing the same things over and over again. I do a lot of design studios with other designers and QA. My whole idea is you want to make sure that everyone’s idea is heard but also making a way where if you see or feel a trend, that you could do it in a way where you solve that problem first and move on from there.
+
+Nathan:
+
+    I really appreciate in your research that you had the survey, that you had a survey instrumented, but also not just that it had a lot of quantitated responses. Often when I do surveys, that blast big box is a treasure trove of qualitative themes. Can you talk a little about qualitative themes that emerged and how it might have changed the direction or perception how you worked with the system?
+
+Adekunle:
+
+    Yeah. I think one thing it was interesting but I was kind of shocked where we had the design system one time, but it was like it depended on actual framework. A couple of engineer managers were like yeah, I just want a bootstrap version of it. People were like why do they want a bootstrap. But it was a major important because it made it super easy to use styles. That’s why I try to communicate as much as possible for the users. I want to take it and use it and basically within the hour and in our current framework, the one I was working on, it probably took me a half day or a day to kind of put it into your application. So that was one thing that was kind of fascinating. But another thing was like a lot of engineers are like I don’t want to write CSS. This is where I thought if you’re a front engineer you love writing CSS but that’s not the case.
+
+Nathan:
+
+    You talked about frictionless a lot, it’s a word that you just used and you just referred a bit to on-boarding as a designer and engineer. What kind of tips could you offer to say if you look at your on-boarding process and you want to optimize down from a day, that sounds really long, what are the key things you would do to optimize that process to be frictionless?
+
+Adekunle:
+
+    It goes back to the thing I was talking about around like documentation. And this is the thing to this day I don’t even like writing documentation but I feel like it’s super important because you can’t have someone telling you ins and outs of it, but you can be in a place where people can understand it. Not only designers but engineers, not only engineers but also everyone else. You want to be in a way where it empowers the people and if you have documentation, it makes everyone’s lives easier.
+
+Nathan:
+
+    What would be good documentation for on-boarding. You said people don’t like to write documentation. How do you look at that blank canvas of how to provide instructions and choose the right moments to make them successful.
+
+Adekunle:
+
+    That’s a great question. There’s one project I was working on where we were building out a data visualization design system. And with data viz it’s not as simple as creating a button. We actually had to really like get — when should I use a bar chart or a line chart or whatever like that. And one of the things we had the pleasure of having a content strategist on the team. She was giving us tips and basically we had a framework. Basically for each of the components, it follows a specific framework. So it made it easier for us to write documentation but also she did it in a way where she wasn’t writing the documentation. She just kind of gave us the framework, we would take the first stab at it and she would give us tips and tricks with that and I feel like that was super helpful because it made it a way where everyone was slowly understanding how to write effective documentation that is clear and concise basically.
+
+Nathan:
+
+    All hail the content strategists that made a system for the system makers. The next thing that comes to mind is I really appreciate that you had such structure in I think it was a github view and all the tasks who they’re assigned to. And in particular the bracketed tasks to help you understand this task is for that topic. How do you get other people to confirm to or embrace the conventions around how you track the work and model the work?
+
+Adekunle:
+
+    It’s still kind of hard because I follow that and I tell people you don’t have to follow it if you don’t want to, but it’s going to make your life easier because like even before I was doing that method I was just kind of like I don’t really care but I think it’s super important because people start seeing the benefits of having some sort of system and framework for anything. They don’t have to follow it, but it’s there if they need it. And I tell people all the time if you’re like super busy and you have like five hours to work on a component, we have everything you need. So there’s a framework and sooner or later what’s going to happen is they don’t have to think about it no more. It’s like I know how do this or that. It’s all readable. But I think that’s super important. They’re not going to really — there’s going to be pushback in the beginning, but I think you know the more people are exposed to it, the easier it gets and they start kind of con forming.
+
+Nathan:
+
+    That’s great. And so you had a moment in your talk where you said design systems don’t exist until they’re in code. I think a lot of people had a very strong reaction to the positive and I suspect there are a other people that were like what?  I got sketch files. I chose color. So help me understand a little bit more about the definitiveness to that statement.
+
+Adekunle:
+
+    Yeah. So this came from when I was like doing a lot of mock-ups where — I used to do this back in the day, but I was lake I know sometimes we have a grid system and let’s add to an extra pixels of padding or let’s use a different color. And what ends up happening all the stuff we created is all snowflakes. I think the idea of using it in code, but also building in a way where you don’t have to write new UI for any component. One of the things I do is like I use a functional CSS which is similar to itacions. So the whole idea is you don’t have to like write any new code. Kind of like actually craft the act all UI. And what I found out is that the more you give to people, the less likely — the more likely they’re going follow the design system. And I think like I said, it’s — I feel like it’s not really real until it’s in code because we could like plan the best design system ever, but unless it’s lake in code and people are actually using it, it’s not really real. It’s kind of like anything else. I can draw you a car, but it’s not really real until you build it out.
+
+Nathan:
+
+    To close, you use a phrase small steps, great distances. As a collaborator working amid the design system you’re creating, how can you help me understand, will we ever get there?  Will we ever be done and what is out in that great distance?  Where are we trying to go.
+
+Adekunle:
+
+    I’m going to say a design is never done. Because obviously it’s like hey, it’s about to be like complete, finished, but there’s always going to be some sort of improvement on it and you kind of have to kind of taking a stride where if you want to work out. You gain muscles but you have to keep on working on it. You’re trying to improve and keep on improving and you have to communicate that to everybody. Because I feel like in some cases all right this is done and a year later it gets outdated and you have to work on it again. You keep on working on it, the more likely it’s going to be successful, but also the less likely that it’s — like it’s going to be a place where you could be really focusing on things that matter, and you’re just doing small steps and you look back like a year and you’re like oh, wow. We started here and end up here. That’s the thing I’m trying to communicate because I feel like people feel like this is one shot. Once it’s done you don’t have to worry about it anymore. But that’s not the case.
+
+Nathan:
+
+    Thanks for taking us on a walk. Everybody, thank you Adekunle.
+
+2018 Sessions
+View full session archive
+Creating Cultures of Empathy
+Creating Cultures of Empathy
+Sharon Steed
+Start with Your Brand Purpose
+Start with Your Brand Purpose
+Kim Williams
+Scenario-Driven Design Systems
+Scenario-Driven Design Systems
+Yesenia Perez-Cruz
+Composable Animation
+Composable Animation
+Sarah Drasner
+The Three P’s of a Design System
+The Three P’s of a Design System
+Adekunle Oduye
+Your Face Here
+Your Face Here
+Jennifer Hom
+Preserving Legacy Design Systems
+Preserving Legacy Design Systems
+Hamish Smyth
+Jesse Reed
+Language of Design
+Language of Design
+Amélie Lamont
+Putting the “Design” in Design Systems
+Putting the “Design” in Design Systems
+Dan Mall
+Material Theming
+Material Theming
+Michelle Alvarez
+Yasmine Evjen
+Driving Adoption
+Driving Adoption
+Julie Horvath
+Inclusive Design
+Inclusive Design
+John Maeda
+Subscribe to Clarity updates
+Explore Archives
+
+    Sessions
+    People
+    #Clarity2022
+    #Clarity2021
+    #Clarity2020
+    #Clarity2019
+    #Clarity2018
+    #Clarity2017
+    #Clarity2016
+
+Join us
+
+    Join Us for Clarity 2023
+    Partner with Clarity
+    Speaking at Clarity
+    Scholarships
+
+Information
+
+    Code of Conduct
+    Health & Safety
+    Diversity, Equity, & Inclusion
+    Terms of Service
+    Privacy Policy
+    Style Guide
+
+Connect
+
+    Contact Us
+    Design Systems Slack
+    X (Twitter)
+    Threads
+    LinkedIn
+    Facebook
+    Instagram
+    Bluesky
+    Mastodon
+    Pinterest
+    TikTok
+
+Copyright © 2014–
+2023
+Design Systems Coalition, LLC. All rights reserved.
+
+    </pre>
+  </div>
+</body>
+</html>

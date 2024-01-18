@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UR alumni login</title>
+    <style>
+        body{
+            padding-top: 50px;
+            padding-left:20px ;
+            align-content: center;
+            font-family:Roboto, "Cantarell", Arial, sans-serif;
+            font-size: inherit;
+            background-color: inherit;
+            background-repeat: inherit;
+        }
+        .lr1{
+            display: flex;
+            border: none;
+        }
+        .lr2{
+            display: flex;
+            margin-left: 20px;
+            max-width: 200px;
+            display: relative;
+            width: 50%;
+        }
+        .lr2 img{
+            border-radius: 50%;
+            width: 150px;
+            height: 200px;
+            float: left;
+            padding-right: 20px;
+            margin: 0px;
+            margin-bottom: 10px;
+            margin-top: 0px;
+        }
+        h2,h1{
+            color: rgba(41, 103, 219, 0.984);
+            font-family:Roboto, "Cantarell", Arial, sans-serif;
+        }
+        .lr3{
+            flex: 2;
+            align-items: center;
+            padding: 40px;
+            border: 2pt solid grey;
+            align-content: center;
+            font-size: large;
+            height: 100%;
+            border-radius: 30px;
+
+
+        }
+         label{
+            border-radius: 12px;
+            width: 100px;
+            height: 15px;
+            padding: 30px;
+
+        }
+        input[submit]{
+            align-self: center;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        form{
+            padding-top: 20px;
+            position: pointer;
+        }
+        #sd{
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        #button{
+            font-size:30px;
+            font-weight: 400;
+            width: 100px;
+            color: white;
+            background-color:rgba(41, 103, 219, 0.984);
+            width:200px;padding: auto;
+        }
+        input-control{
+            border: 2px;
+            box-shadow: 3px rgba(41, 103, 219, 0.984) ;
+        }
+        .bt{
+            box-shadow: black 5px;
+        }
+        .bt:focus{
+           border:2px solid rgba(41, 103, 219, 0.984) ; 
+        }
+        </style>
+</head>
+<body align="center">
+    <header>
+
+    </header>
+    <main>
+        <div class="gy1">
+            <div class="lr2" align="left">
+                <a href="alumni.html"><img src="pic/ur.jpeg"  height="100px"/></a>
+                <h1>UR Alumni network</h1></a>
+            </div>
+        </div>
+     <div class="lr1">
+      <div class="lr3">
+        <h2>login</h2>
+        <p>Please fill the form:</p>
+        <form action="#"method="get">
+            <label><u>U</u>sername:&nbsp;&nbsp;<input class="bt" type="text"name="username"size="20"placeholder="      Enter username"autofocus autocomplete="off"style="border-radius:30px;font-size:20px;box-shadow:black;"required/></label><br/><br/>
+            <label><u>P</u>assword:&nbsp;&nbsp;<input class="bt" type="password"name="pssword"placeholder="      Enter password"style="border-radius:30px;font-size:20px"required/></label><br/><br/>
+            <label><input type="checkbox"name="option"checked/><u>R</u>emember me</label><br/><br/>
+            <label><input id="button"type="submit"value="login"style=""/></label><br/><br/>
+            <label align="right"><a href="#"><u>F</u>orget password?</a></label>
+        </form>
+        <p id="sd">Regist here if you are new <a href="sign up.html"><u>C</u>reate account.</a></p>
+      </div>
+     </div>
+    </main>
+    <footer>
+   <p align="center">copyright&copy; all right reseved.</p>
+    </footer>
+</body>
+</html>

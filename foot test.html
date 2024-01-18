@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=divice-width,initial-scale=1.0"/>
+        <title>footer test</title>
+    </head>
+    <script src="https://kit.fontawesome.com/9d07f12b47.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"href="css1.css">
+    <body>
+        <main style="border: 4px solid tomato;font-family: courier;font-size: 300%;">
+            <pre>
+                hello.
+                how.
+                where.
+            <mark>get all</mark>
+            <em>where have you been</em><br/>
+            <small>hello gad</small>
+            <ins>where are your</ins><br>
+            <del>how  are you</del>
+            <blockquote style="font-size: 10px;">The quieter you become the more you will be able to hear</blockquote>
+            <q>from kali linux/gnu</q>
+            <blockquote cite="https://www.kali.com"><abbr title="grathicaal user interface">gui</abbr>
+            </pre>
+            <address>
+                The contacts<br>
+                gad,<br>
+                RWANDA,<br/>
+                northern<br/>
+                Burera<br/>
+                <form action="#">
+                    <button type="submit" id="gad">grey</button>
+                </form>
+            </address>
+            <p><cite>Home and MOther</cite> we miss home,mom and dad. time is taking you away</p>
+            <bdo dir="rtl">exellent</bdo>
+            <!--remeember all are nesssary gad-->
+        </main>
+        <script>
+            var score1=78;
+            let score2=80;
+            var total
+            total=score1+score2
+            var greeting=(total<50)?"fail":"pass"
+            document.write("the total mark is "+total+" "+greeting)
+            console.log("the total mark is"+total+"  "+greeting)
+            alert("the total mark is"+total+"  "+greeting)
+            if(total<100){
+                document.write("fail")
+            }
+            else{
+                document.write("pass")
+            }
+            var name=prompt("enter your name","gad")
+            var age=prompt("enter your age",10)
+            var n;
+            document.write("<table border=1>")
+            for(n=0;n<age;n++)
+            {
+                document.write("<tr><td>"+name+"</td>"+"<td>"+age+"</td></tr>")
+            }
+            document.write("</table>")
+            function add(name)
+        {
+            var tax=(name*18)/100
+            return tax
+        }
+        var today=new Date().getFullYear();
+        document.write(today)
+
+        document.write("the tax is: "+add(1000))
+        function show()
+        {
+            var r=confirm("do you want to continue")
+            if(r==true){
+                document.write("<a href=login.html>wego</a>")
+            }
+            else{
+                document.write("see you next time")
+            }
+        }
+        </script>
+        <div class="footer">
+            <div class="col1">
+                <h4>This site is disigned by irumvag 
+                </h4>
+                <a href="#">about</a>
+                <a href="#">new</a>
+                <a href="#">activity</a>
+                <a href="#">private policy</a>
+            </div>
+            <div class="col2">
+                <h4>GET UPDATE</h4>
+                <form>
+                    <input type="email" placeholder="your email address"required><br>
+                    <button type="submit" onclick="show()">SUBSCRIBE NOW</button>
+                </form>
+            </div>
+            <div class="col3">
+              <h4>follow  us on </h4>
+              <p>RWANDA,burundi</p>
+              <div class="image"> 
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-snap"></i>
+              </div> 
+            </div>
+        </div>
+    </body>
+</html>
